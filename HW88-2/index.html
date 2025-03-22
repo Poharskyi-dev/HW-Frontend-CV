@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<form action="http://localhost:8080/auth/sign-up" method="POST">
+
+    <header>
+    <h1>Student Registration Form</h1>
+    </header>
+
+    <div>
+        <label for="full-name"> Full name:</label>
+        <input  type="text"
+                id="full-name"
+                name="fullName"
+                placeholder="Full Name"
+                required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="email"> Email:</label>
+        <input  type="text"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="password"> Password:</label>
+        <input  type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="age"> Age:</label>
+        <input  type="number"
+                id="age"
+                name="age"
+                min="1"
+                max="150"
+                placeholder="Age Name"
+                required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="dob" > Date of Birth:</label>
+        <input  type="date"
+                id="dob"
+                name="dob"
+                placeholder="Date of Birth"
+                required>
+    </div>
+
+    <br>
+
+    <div>
+        <span>Gender:</span>
+        <label for="genderMale">Male</label>
+        <input  type="radio"
+                id="genderMale"
+                name="gender"
+                value="male"
+                required>
+
+        <label for="genderFemale">Female</label>
+        <input  type="radio"
+                id="genderFemale"
+                name="gender"
+                value="female"
+                required>
+
+        <label for="genderOther">Other</label>
+        <input  type="radio"
+                id="genderOther"
+                name="gender"
+                value="other"
+                required>
+    </div>
+
+    <br>
+
+    <div>
+        <span>Interests:</span>
+        <label for="inerestSport">Sport</label>
+        <input  type="checkbox"
+                id="inerestSport"
+                name="interest"
+                value="sport"
+                required>
+
+        <label for="interestMusic">Music</label>
+        <input  type="checkbox"
+                id="interestMusic"
+                name="interest"
+                value="music"
+                required>
+
+        <label for="interestReading">Reading</label>
+        <input  type="checkbox"
+                id="interestReading"
+                name="interest"
+                value="reading"
+                required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="country">Country:</label>
+        <select  name="country" id="country" required>
+            <option value="UA">Ukraine</option>
+            <option value="DE">Germany</option>
+        </select>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="bio"> Biography:</label>
+        <input  type="text"
+                id="bio"
+                name="bio"
+                placeholder="Your Biography"
+                required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="userid"> User Id:</label>
+        <input  type="number"
+                id="userid"
+                name="userId"
+                min="1"
+                max="999999"
+                placeholder="User Id"
+                required>
+    </div>
+
+    <br>
+
+    <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+
+</form>
+</body>
+</html>
